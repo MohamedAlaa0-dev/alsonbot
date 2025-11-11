@@ -1,27 +1,38 @@
 import os
-import sys
-from openai import OpenAI
 import openai
+import streamlit as st
+import warnings
 from langchain_community.document_loaders import TextLoader
 from langchain.indexes import VectorstoreIndexCreator
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_openai import OpenAI as LangChainOpenAI
-import warnings
 
 warnings.filterwarnings("ignore")
 
+# إعداد مفتاح API من بيئة Streamlit Cloud
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-prompt = sys.argv[1]
+# عنوان التطبيق
+st.title("🎓 AlsunBot - Your School Assistant")
 
-loader = TextLoader("data.txt")
-loader.load()
+# مربع إدخال المستخدم
+user_input = st.text_input("Ask me anything about Alsun International Schools:")
 
-embeddings = OpenAIEmbeddings(model="text-embedding-ada-002", api_key=openai.api_key)
+# تحميل بيانات المدرسة (مرة واحدة فقط)
+@st.cache_resource
+def load_index():
+    loader = TextLoader("data.txt")
+    data = loader.load()
+    embeddings = OpenAIEmbeddings(model="text-embedding-ada-002", api_key=openai.api_key)
+    index = VectorstoreIndexCreator(embedding=embeddings).from_loaders([loader])
+    return index
 
-index = VectorstoreIndexCreator(embedding=embeddings).from_loaders([loader])
+index = load_index()
 
+# إنشاء نموذج اللغة
 llm = LangChainOpenAI(api_key=openai.api_key, temperature=0)
 
-result = index.query(prompt, llm=llm, retriever_kwargs={"search_kwargs": {"k": 1}})
-print(result)
+# الرد على المستخدم
+if user_input:
+    result = index.query(user_input, llm=llm, retriever_kwargs={"search_kwargs": {"k": 1}})
+    st.write("**AlsunBot:**", result)
