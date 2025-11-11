@@ -5,4 +5,3 @@ langchain-community==0.2.5
 langchain-openai==0.1.9
 streamlit==1.36.0
 streamlit_chat==0.1.1
-
