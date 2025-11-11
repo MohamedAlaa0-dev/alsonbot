@@ -23,7 +23,8 @@ user_input = st.text_input("Ask me anything about Alsun International Schools:")
 def load_index():
     loader = TextLoader("data.txt")
     data = loader.load()
-    embeddings = OpenAIEmbeddings(model="text-embedding-ada-002", api_key=openai.api_key)
+    embeddings = OpenAIEmbeddings(model="text-embedding-ada-002", openai_api_key=openai.api_key)
+
     index = VectorstoreIndexCreator(embedding=embeddings).from_loaders([loader])
     return index
 
@@ -36,3 +37,4 @@ llm = LangChainOpenAI(api_key=openai.api_key, temperature=0)
 if user_input:
     result = index.query(user_input, llm=llm, retriever_kwargs={"search_kwargs": {"k": 1}})
     st.write("**AlsunBot:**", result)
+
