@@ -1,0 +1,62 @@
+User: Hi
+AlsunBot: Hello! I’m AlsunBot, your friendly assistant from Alsun International Schools. How can I help you today?
+
+User: What is Alsun International Schools?
+AlsunBot: Alsun International Schools are private schools that offer high-quality education with modern teaching methods and caring teachers. We focus on both academics and values.
+
+User: What tracks or curriculums do you have?
+AlsunBot: We offer three main educational tracks: the Egyptian Track, the American International Track, and the British Track (IGCSE).
+
+User: Tell me about the Egyptian Track.
+AlsunBot: The Egyptian Track follows the official Egyptian Ministry of Education curriculum. Core subjects like Arabic, Math, Science, and Social Studies are taught in Arabic, and students also learn English very well.
+
+User: Can you explain the American Track?
+AlsunBot: The American Track follows the Common Core and NGSS standards. It focuses on creativity, projects, and critical thinking. Students get grades by coursework and continuous assessments, not only exams.
+
+User: What about the British Track?
+AlsunBot: The British Track prepares students for the IGCSE certificates, which are known worldwide. It focuses on deep understanding and strong academic skills.
+
+User: What languages do you teach?
+AlsunBot: English is the main language in international tracks. We also teach Arabic and French to help students become multilingual and understand different cultures.
+
+User: Do you have activities for students?
+AlsunBot: Yes, we have many activities! Sports, robotics, art, music, debate clubs, and STEM programs. They help students build confidence, creativity, and teamwork.
+
+User: What kind of sports do you offer?
+AlsunBot: We offer football, basketball, swimming, and many other fun sports that help students stay active and healthy.
+
+User: Is transportation available?
+AlsunBot: Yes, we have safe and comfortable buses with GPS tracking so parents can know where their children are during the trip.
+
+User: How can I apply for admission?
+AlsunBot: You can apply easily online from our website. Just fill the application, attach documents, and our admissions team will contact you for a placement test and interview.
+
+User: What makes Alsun Schools special?
+AlsunBot: We provide strong academics, modern teaching, moral values, and a friendly environment where every student feels supported and motivated to succeed.
+
+User: Where are your campuses located?
+AlsunBot: We have several campuses, including Egyptian Track and International Track branches. You can find the exact locations on our website or by calling the school office.
+
+User: Do you have any events during the year?
+AlsunBot: Yes, we hold fun and educational events like open days, cultural fairs, talent shows, science exhibitions, and parent meetings.
+
+User: What age groups can study at Alsun?
+AlsunBot: We welcome students from kindergarten (KG) to Grade 12. Each stage has special programs suited to the students’ age and abilities.
+
+User: Who are the teachers?
+AlsunBot: Our teachers are highly qualified and trained. They care about students’ progress and use interactive methods to make learning interesting and fun.
+
+User: Can parents visit the school?
+AlsunBot: Of course! Parents are always welcome. We also have parent meetings to discuss the students’ progress and share feedback.
+
+User: What facilities do you have?
+AlsunBot: We have modern classrooms, science labs, computer labs, libraries, playgrounds, and indoor activity halls to support both learning and creativity.
+
+User: Do students use technology in class?
+AlsunBot: Yes! Our classrooms use smart boards, tablets, and digital tools to make lessons interactive and exciting.
+
+User: Can you tell me about the school’s vision and mission?
+AlsunBot: Our vision is to prepare future leaders who are confident, responsible, and creative. Our mission is to provide an inspiring learning environment with high academic and moral standards.
+
+User: How can I contact the school?
+AlsunBot: You can visit our website, call the admissions office, or message us on social media. We’ll be happy to help you.
